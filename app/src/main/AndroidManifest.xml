@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.quotesapp.rajat.myplaystoreapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".philosophers">
+            <intent-filter>
+                <action android:name="com.quotesapp.rajat.myplaystoreapp.philosophers" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Spritual">
+            <intent-filter>
+                <action android:name="com.quotesapp.rajat.myplaystoreapp.Spritual" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Motivational">
+            <intent-filter>
+                <action android:name="com.quotesapp.rajat.myplaystoreapp.Motivational" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SocratesActivity" />
+        <activity android:name=".AristotleActivity" />
+        <activity android:name=".PaltoActivity" />
+        <activity android:name=".SorenKierkegaardActivity" />
+        <activity android:name=".ThalesActivity" />
+        <activity android:name=".AnaximanderActivity" />
+        <activity android:name=".ImmanuelKantActivity" />
+        <activity android:name=".PaulSartreActivity" />
+        <activity android:name=".ReneDescratesActivity" />
+        <activity android:name=".FredrichNeitscheActivity" />
+        <activity android:name=".SocratesQuotesActivity" />
+        <activity android:name=".AnaximanderQuotesActivity" />
+        <activity android:name=".AristotleQuotesActivity" />
+        <activity android:name=".FredrichNeitscheQuotesActivity" />
+        <activity android:name=".ImmanuelKantQuotesActivity" />
+        <activity android:name=".PaltoQuotesActivity" />
+        <activity android:name=".PaulSartreQuotesActivity" />
+        <activity android:name=".ThalesQuotesActivity" />
+        <activity android:name=".SorenQuotesActivity" />
+        <activity android:name=".ReneQuotesActivity" />
+        <activity android:name=".BhudhhaActivity" />
+        <activity android:name=".SadhguruActivity" />
+        <activity android:name=".TolleActivity" />
+        <activity android:name=".YoganandaActivity" />
+        <activity android:name=".DalaiLamaActivity" />
+        <activity android:name=".SandeepMaheshwariActivity" />
+        <activity android:name=".SpritualBooksActivity" />
+        <activity android:name=".SpritualVideosActivity" />
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

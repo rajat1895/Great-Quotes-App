@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.quotesapp.rajat.myplaystoreapp.Motivational"
+    android:background="#e8eaf6">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Motivational Quotes"
+        android:id="@+id/textView5"
+
+        android:layout_centerHorizontal="true" />
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true">
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="Only I can change my life. No one can do it for me - Carol Burnett"
+        android:id="@+id/moti_quote1"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="87dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="Life is 10% what happens to you and 90% how you react to it - Charles R. Swindoll"
+        android:id="@+id/moti_quote2"
+        android:layout_below="@+id/moti_quote1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="Failure will never overtake me if my determination to succeed is strong enough - Og Mandino"
+            android:id="@+id/moti_quote3"
+            android:layout_below="@+id/moti_quote2"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="Do the difficult things while they are easy and do the great things while they are small. A journey of a thousand miles must begin with a single step - Lao Tzu"
+            android:id="@+id/moti_quote4"
+            android:layout_below="@+id/moti_quote3"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="Setting goals is the first step in turning the invisible into the visible - Tony Robbins"
+            android:id="@+id/moti_quote5"
+            android:layout_below="@+id/moti_quote4"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="The will to win, the desire to succeed, the urge to reach your full potential... these are the keys that will unlock the door to personal excellence - Confucius"
+            android:id="@+id/moti_quote6"
+            android:layout_below="@+id/moti_quote5"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="If you fell down yesterday, stand up today - H. G. Wells"
+            android:id="@+id/moti_quote7"
+            android:layout_below="@+id/moti_quote6"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="Consult not your fears but your hopes and your dreams. Think not about your frustrations, but about your unfulfilled potential. Concern yourself not with what you tried and failed in, but with what it is still possible for you to do - Pope John XXIII"
+            android:id="@+id/moti_quote8"
+            android:layout_below="@+id/moti_quote7"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="“Strength does not come from winning. Your struggles develop your strengths. When you go through hardships and decide not to surrender, that is strength.” —Arnold Schwarzenegger"
+            android:id="@+id/moti_quote9"
+            android:layout_below="@+id/moti_quote8"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="“All the adversity I’ve had in my life, all my troubles and obstacles, have strengthened me.... You may not realize it when it happens, but a kick in the teeth may be the best thing in the world for you.” —Walt Disney"
+            android:id="@+id/moti_quote10"
+            android:layout_below="@+id/moti_quote9"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="“There are two ways of exerting one’s strength: one is pushing down, the other is pulling up.” —Booker T. Washington"
+            android:id="@+id/moti_quote11"
+            android:layout_below="@+id/moti_quote10"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="“I like criticism. It makes you strong.” —LeBron James"
+            android:id="@+id/moti_quote12"
+            android:layout_below="@+id/moti_quote11"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="“There are better starters than me but I’m a strong finisher.” —Usain Bolt"
+            android:id="@+id/moti_quote13"
+            android:layout_below="@+id/moti_quote12"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="“Strength and growth come only through continuous effort and struggle.” —Napoleon Hill"
+            android:id="@+id/moti_quote14"
+            android:layout_below="@+id/moti_quote13"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="“Make up your mind that no matter what comes your way, no matter how difficult, no matter how unfair, you will do more than simply survive. You will thrive in spite of it.” —Joel Osteen"
+            android:id="@+id/moti_quote15"
+            android:layout_below="@+id/moti_quote14"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="“Tough times never last, but tough people do.” —Robert H. Schuller"
+            android:id="@+id/moti_quote16"
+            android:layout_below="@+id/moti_quote15"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="“Difficulties are meant to rouse, not discourage. The human spirit is to grow strong by conflict.” —William Ellery Channing"
+            android:id="@+id/moti_quote17"
+            android:layout_below="@+id/moti_quote16"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="“I believe in being strong when everything seems to be going wrong. I believe that happy girls are the prettiest girls. I believe that tomorrow is another day and I believe in miracles.” —Audrey Hepburn"
+            android:id="@+id/moti_quote18"
+            android:layout_below="@+id/moti_quote17"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="“Sometimes you don’t realize your own strength until you come face to face with your greatest weakness.” —Susan Gale"
+            android:id="@+id/moti_quote19"
+            android:layout_below="@+id/moti_quote18"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="“Life is very interesting. In the end, some of your greatest pains become your greatest strengths.” —Drew Barrymore"
+            android:id="@+id/moti_quote20"
+            android:layout_below="@+id/moti_quote19"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="32dp" />
+
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
