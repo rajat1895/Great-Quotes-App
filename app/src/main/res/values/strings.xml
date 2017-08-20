@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Great Quotes</string>
+    <string name="action1">Share</string>
+    <string name="action2">Submit Your Quote</string>
+    <string name="action3">Rate Us</string>
+    <string name="action4">Settings</string>
 </resources>

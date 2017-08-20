@@ -43,10 +43,10 @@ public class philosophers extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_philosophers);
         customize_list adapter = new
-                customize_list(philosophers.this, philo,imageId);
-        list = (ListView) findViewById(R.id.listView_phil);
-        list.setAdapter(adapter);
-        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    customize_list(philosophers.this, philo,imageId);
+            list = (ListView) findViewById(R.id.listView_phil);
+            list.setAdapter(adapter);
+            list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
