@@ -1,4 +1,4 @@
-package com.quotesapp.rajat.myplaystoreapp;
+package com.example.rajat.myplaystoreapp;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

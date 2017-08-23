@@ -26,12 +26,12 @@ public class BasicMenuActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.overflow3) {
+        if (id == R.id.overflow4) {
 
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.quotesapp.rajat.myplaystoreapp")));
             //return true;
         }
-        else if (id == R.id.overflow1){
+        else if (id == R.id.overflow2){
             try {
                 Intent i = new Intent(Intent.ACTION_SEND);
                 i.setType("text/plain");
@@ -44,6 +44,17 @@ public class BasicMenuActivity extends AppCompatActivity {
                 //e.toString();
             }
 
+        }
+
+        else if (id == R.id.overflow3)
+        {
+            Intent intent = new Intent(getApplicationContext(), SubmitQuoteActivity.class);
+            startActivity(intent);
+        }
+
+        else {
+            Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);

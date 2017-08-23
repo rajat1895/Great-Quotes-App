@@ -1,85 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.quotesapp.rajat.myplaystoreapp.MainActivity"
-    android:background="#FFFFFF">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Welcome to Great Quotes"
-        android:id="@+id/textView"
-        android:textStyle="bold"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="43dp" />
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:textColor="#FFFFFF"
-        android:textSize="15sp"
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
-        android:layout_width="200dp"
-        android:layout_height="45dp"
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            app:tabGravity="fill"/>
+    </android.support.design.widget.AppBarLayout>
 
-        android:shadowColor="#A8A8A8"
-        android:shadowDx="0"
-        android:shadowDy="0"
-        android:shadowRadius="5"
-
-        android:background="@drawable/buttonshape1"
-        android:text="Philosophers Quotes"
-        android:id="@+id/button"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="45dp" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:textColor="#FFFFFF"
-        android:textSize="15sp"
-
-        android:layout_width="200dp"
-        android:layout_height="45dp"
-
-        android:shadowColor="#A8A8A8"
-        android:shadowDx="0"
-        android:shadowDy="0"
-        android:shadowRadius="5"
-
-        android:background="@drawable/buttonshape1"
-        android:text="Spiritual Quotes"
-        android:id="@+id/button2"
-        android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/button"
-        android:layout_alignEnd="@+id/button" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:textColor="#FFFFFF"
-        android:textSize="15sp"
-
-        android:layout_width="200dp"
-        android:layout_height="45dp"
-
-        android:shadowColor="#A8A8A8"
-        android:shadowDx="0"
-        android:shadowDy="0"
-        android:shadowRadius="5"
-
-        android:background="@drawable/buttonshape1"
-
-        android:text="Motivational Quotes"
-        android:id="@+id/button3"
-        android:layout_marginTop="76dp"
-        android:layout_below="@+id/button2"
-        android:layout_alignStart="@+id/button2" />
-
-</RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_marginBottom="?attr/actionBarSize" />
+</android.support.design.widget.CoordinatorLayout>

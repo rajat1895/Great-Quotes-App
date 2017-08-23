@@ -6,9 +6,10 @@
 
     <item
         android:title="@string/action1"
-        app:showAsAction="never"
+        app:showAsAction="always"
         android:orderInCategory="1"
         android:id="@+id/overflow1"
+        android:icon="@drawable/ic_home_white_24dp"
         />
 
     <item
@@ -21,15 +22,17 @@
     <item
         android:title="@string/action3"
         app:showAsAction="never"
-        android:orderInCategory="1"
+        android:orderInCategory="3"
         android:id="@+id/overflow3"
         />
 
     <item
         android:title="@string/action4"
         app:showAsAction="never"
-        android:orderInCategory="1"
+        android:orderInCategory="4"
         android:id="@+id/overflow4"
         />
+
+
 
 </menu>

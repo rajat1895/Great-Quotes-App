@@ -1,65 +1,76 @@
 package com.quotesapp.rajat.myplaystoreapp;
 
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
 
 public class MainActivity extends BasicMenuActivity {
 
-    private static Button bttn_philosophers;
-    private static Button bttn_spritual;
-    private static Button bttn_motivational;
-
-
+    private Toolbar toolbar;
+    private TabLayout tabLayout;
+    private ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        onClickButtonPhilosopherListner();
-        onClickButtonSpritualListner();
-        onClickButtonMotivationalListner();
+
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        viewPager = (ViewPager) findViewById(R.id.viewpager);
+        setupViewPager(viewPager);
+
+        tabLayout = (TabLayout) findViewById(R.id.tabs);
+        tabLayout.setupWithViewPager(viewPager);
     }
 
-    public void onClickButtonPhilosopherListner(){
-        bttn_philosophers=(Button)findViewById(R.id.button);
-        bttn_philosophers.setOnClickListener(
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent=new Intent("com.quotesapp.rajat.myplaystoreapp.philosophers");
-                        startActivity(intent);
-                    }
-                }
-        );
+    private void setupViewPager(ViewPager viewPager) {
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        adapter.addFragment(new Fragment1Philosophers(), "PHILOSOPHERS");
+        adapter.addFragment(new Fragment2Spritual(), "SPRITUAL");
+        adapter.addFragment(new Fragment3Motivational(), "MOTIVATIONAL");
+        viewPager.setAdapter(adapter);
     }
 
-    public void onClickButtonSpritualListner(){
-        bttn_spritual=(Button)findViewById(R.id.button2);
-        bttn_spritual.setOnClickListener(
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent=new Intent("com.quotesapp.rajat.myplaystoreapp.Spritual");
-                        startActivity(intent);
-                    }
-                }
-        );
-    }
-    public void onClickButtonMotivationalListner(){
-        bttn_motivational=(Button)findViewById(R.id.button3);
-        bttn_motivational.setOnClickListener(
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent=new Intent("com.quotesapp.rajat.myplaystoreapp.Motivational");
-                        startActivity(intent);
-                    }
-                }
-        );
-    }
+    class ViewPagerAdapter extends FragmentPagerAdapter {
+        private final List<Fragment> mFragmentList = new ArrayList<>();
+        private final List<String> mFragmentTitleList = new ArrayList<>();
 
+        public ViewPagerAdapter(FragmentManager manager) {
+            super(manager);
+        }
 
+        @Override
+        public Fragment getItem(int position) {
+            return mFragmentList.get(position);
+        }
+
+        @Override
+        public int getCount() {
+            return mFragmentList.size();
+        }
+
+        public void addFragment(Fragment fragment, String title) {
+            mFragmentList.add(fragment);
+            mFragmentTitleList.add(title);
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return mFragmentTitleList.get(position);
+        }
+    }
 }

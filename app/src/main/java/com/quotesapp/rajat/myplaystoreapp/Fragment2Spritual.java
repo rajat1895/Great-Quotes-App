@@ -1,13 +1,16 @@
 package com.quotesapp.rajat.myplaystoreapp;
 
 import android.content.Intent;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-public class Spritual extends AppCompatActivity {
+public class Fragment2Spritual extends Fragment {
 
     ListView list;
     String[] sprit = {
@@ -34,21 +37,29 @@ public class Spritual extends AppCompatActivity {
     };
 
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_spritual);
+    public Fragment2Spritual() {
+        // Required empty public constructor
+    }
 
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.activity_spritual, container, false);
+        // WebView browser = (WebView) view.findViewById(R.id.webView3);
         customize_list adapter = new
-                customize_list(Spritual.this, sprit,imageId2);
-        list = (ListView) findViewById(R.id.listView_spritual);
+                customize_list(getActivity(), sprit,imageId2);
+        list = (ListView) view.findViewById(R.id.listView_spritual);
         list.setAdapter(adapter);
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-
                 if (position == 0) {
                     Intent myIntent = new Intent(view.getContext(), BhudhhaActivity.class);
                     startActivityForResult(myIntent, 0);
@@ -92,6 +103,7 @@ public class Spritual extends AppCompatActivity {
 
             }
         });
+        return view;
     }
 }
 
